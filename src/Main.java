@@ -1,13 +1,22 @@
+class Dog {
+    String name, says;
+}
 public class Main {
     public static void main(String[] args) {
-        FloatClass f1 = new FloatClass();
-        FloatClass f2 = new FloatClass();
-        f1.f = 101;
-        f2.f = 102;
-        System.out.println("f1 = " + f1.f+",  f2 = " + f2.f);
-        f1 = f2;
-        System.out.println("f1 = " + f1.f+",  f2 = " + f2.f);
-        f1.f=1000;
-        System.out.println("f1 = " + f1.f+",  f2 = " + f2.f);
+        Dog dog1 = new Dog();
+        Dog dog2 = new Dog();
+
+        dog1.name = "lusy";
+        dog1.says = "gaaav";
+
+        dog2.name = "Jecky";
+        dog2.says = "chaaan";
+
+        Dog dog3 = new Dog();
+
+        dog1=dog3;
+
+        System.out.println(dog1 == dog3);
+        System.out.println(dog1.equals(dog3));
     }
 }
