@@ -1,12 +1,11 @@
-class Dog {
-    String name, says;
-}
 public class Main {
-    public static void main(String[] args) {
-        int a, b,c;
-        a=0x9;
-        b=0x7;
-        c=a ^ b;
-        System.out.println(Integer.toBinaryString(c));
+    public static void main(String [] args){
+        int n = 100;
+        for (int i = 2; i <= n; i++){
+            for (int j=2; j <= i; j++){
+                if ((i % j) == 0) break;
+                else System.out.println(i);
+            }
+        }
     }
 }
